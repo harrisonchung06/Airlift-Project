@@ -24,9 +24,11 @@ Comparison With Study:
 ![New Project(1)](https://github.com/user-attachments/assets/804354ef-c92c-477b-bf56-29a5ef6be756)
 
 Graph of all permuations by H/L Value:
+
 ![New Project(2)](https://github.com/user-attachments/assets/45cdf00b-865e-4674-97d6-43360049d74b)
 
 
 Graph of all permutations:
+
 ![Fixed Perm Graph](https://github.com/user-attachments/assets/6c637743-3e64-482f-9477-9f4016b79659)
 
