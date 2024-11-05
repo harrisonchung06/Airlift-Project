@@ -20,11 +20,11 @@
 * Parameters from the highest preforming curve were obtained 
 
 Example Data:
-![New Project](https://github.com/user-attachments/assets/5c2d3afb-bdb9-4737-b2a2-a5a8c708eadf)
 
 
-Example Graph (K=4.0)
-![k1](https://github.com/user-attachments/assets/c4c01f21-f7f9-43d5-acef-fc8086082d4c)
+
+Example Graph 
+
 
 
 Graph of all permutations:
