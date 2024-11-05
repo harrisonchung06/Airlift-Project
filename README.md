@@ -14,7 +14,10 @@
 * Determine which set of parameters to use for maximum flow. 
 
 ## Project Results: 
-* Acheieved all project goals!
+* Script was able to graph example data well 
+* Preformance curves of all combinations of theoretical values plotted 
+* The highest preforming curve was obtained by comparing the maximum preformance for each graph against one another 
+* Parameters from the highest preforming curve were obtained 
 
 Example Data:
 ![New Project](https://github.com/user-attachments/assets/5c2d3afb-bdb9-4737-b2a2-a5a8c708eadf)
