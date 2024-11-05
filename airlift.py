@@ -13,6 +13,9 @@ import numpy as np
 def calculate_preformance(K,S,HDL, QgQf, i, j, k, l):
     return np.sqrt((HDL[k]-(1/(1+(1/S[j])*(QgQf[l]))))/(K[i]+1+(K[i]+2)*QgQf[l]))
 
+def example_data(K,S,HDL,QgQf, i, j):
+    return np.sqrt((HDL[i]-(1/(1+(1/S[i])*(QgQf[j]))))/(K[i]+1+(K[i]+2)*QgQf[j]))
+
 #SI Units only 
 
 #Keeping s and K values constant despite s and K values not actually being constant 
@@ -25,17 +28,31 @@ def calculate_preformance(K,S,HDL, QgQf, i, j, k, l):
 #DS = 0.0204216
 
 K = np.arange(4.0,6.1, 0.1) #Loss Coefficient 
-S = np.arange(1.5, 2.5, 0.1) #Slip Ratio #
-HDL = np.arange(0.1, 0.83, 0.1) #H/L Submergence Ratio 
+S = np.arange(1.5, 2.6, 0.1) #Slip Ratio 
+HDL = np.arange(0.1, 0.8333, 0.1) #H/L Submergence Ratio 
+
+#Example Data:
+#K = np.array([4.0,5.0,6.0,5.0])
+#S = np.array([1.5, 1.5, 1.5, 2.0])
+#HDL = np.array([0.700, 0.700, 0.700, 0.700])
 
 QgQf = np.arange(0, 15, 0.01) #Qg/Qf
 res = np.zeros(shape=(QgQf.shape))#V/sqrt(2gL)
-gresarr = np.zeros(1680)
-gQgQfarr = np.zeros(1680)
+gresarr = np.zeros(2000)
+gQgQfarr = np.zeros(2000)
 gres = 0
 gQgQf = 0
 cc = 0 #Counts Curves 
+
+'''
+for i in range(len(K)):
+    for j in range(len(QgQf)):
+        res[j] = example_data(K,S,HDL,QgQf, i, j)
+    plt.plot(QgQf, res, label=f'Curve{cc+1}: K={K[i]} S={S[i]} H/L={HDL[i]}')
+    cc+=1
+'''
 #fig, axs = plt.subplots(len(K), sharex=True, sharey=True) #Activates subplots 
+
 for i in range(len(K)):
     for j in range(len(S)):
         for k in range(len(HDL)):
@@ -56,6 +73,9 @@ globmaxres = gresarr.max()
 curveid = gresarr.argmax()
 gQgQf = gQgQfarr[curveid]
 print(f'Global Maximum = {globmaxres}, Curve # = {curveid}, Qg/Qf = {gQgQf}')
-plt.xlabel('Qg/Qf (m^3/s)')
-plt.ylabel('V/Sqrt(2gL) (m/s)')
+
+
+#plt.legend()
+plt.xlabel('Qg/Qf')
+plt.ylabel('V/Sqrt(2gL)')
 plt.show()
