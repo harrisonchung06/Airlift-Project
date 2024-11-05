@@ -23,7 +23,8 @@ Comparison With Study:
 ![New Project](https://github.com/user-attachments/assets/ee9569a1-6519-42f5-a875-5f04287c2376)
 ![New Project(1)](https://github.com/user-attachments/assets/804354ef-c92c-477b-bf56-29a5ef6be756)
 
-Example Graph:
+Example Graph (H/L = 7)
+![HDL7](https://github.com/user-attachments/assets/3277d938-deda-4aec-a343-138fef3260a6)
 
 Graph of all permutations:
 ![Fixed Perm Graph](https://github.com/user-attachments/assets/6c637743-3e64-482f-9477-9f4016b79659)
