@@ -28,4 +28,5 @@ Example Graph (K=4.0)
 
 
 Graph of all permutations:
-![Conglomerate graph](https://github.com/user-attachments/assets/57d0d3dc-e6cc-4a3e-9c4b-016fd24e8ad5)
+![Fixed Perm Graph](https://github.com/user-attachments/assets/6c637743-3e64-482f-9477-9f4016b79659)
+
