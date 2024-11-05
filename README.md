@@ -29,6 +29,5 @@ Graph of all permuations by H/L Value:
 
 
 Graph of all permutations:
-
 ![Fixed Perm Graph](https://github.com/user-attachments/assets/6c637743-3e64-482f-9477-9f4016b79659)
 
